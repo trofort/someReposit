@@ -2,7 +2,7 @@
 //  Section.swift
 //  SomeProject
 //
-//  Created by Максим Деханов on 27.06.17.
+//  Created by Максим Деханов on 27.06.17.qwe
 //  Copyright © 2017 Максим Деханов. All rights reserved.
 //
 
