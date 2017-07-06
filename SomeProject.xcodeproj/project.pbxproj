@@ -15,6 +15,14 @@
 		8D0558561EFFAA1300B3E8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0558541EFFAA1300B3E8A8 /* Main.storyboard */; };
 		8D0558581EFFAA1300B3E8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0558571EFFAA1300B3E8A8 /* Assets.xcassets */; };
 		8D05585B1EFFAA1300B3E8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0558591EFFAA1300B3E8A8 /* LaunchScreen.storyboard */; };
+		8D0558651EFFB04400B3E8A8 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0558641EFFB04400B3E8A8 /* Element.swift */; };
+		8D0558671EFFC8E600B3E8A8 /* Labyrinth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0558661EFFC8E600B3E8A8 /* Labyrinth.swift */; };
+		8D05586A1EFFC94C00B3E8A8 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0558691EFFC94C00B3E8A8 /* Random.swift */; };
+		8D0558711EFFCC6500B3E8A8 /* DrawManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0558701EFFCC6500B3E8A8 /* DrawManager.swift */; };
+		8D0558751EFFD18B00B3E8A8 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0558741EFFD18B00B3E8A8 /* Wall.swift */; };
+		8D05588B1F02DA1800B3E8A8 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05588A1F02DA1800B3E8A8 /* Section.swift */; };
+		8D05588E1F02DA4B00B3E8A8 /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05588D1F02DA4B00B3E8A8 /* Door.swift */; };
+		8D0558901F02DC6B00B3E8A8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05588F1F02DC6B00B3E8A8 /* Device.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		8D0558571EFFAA1300B3E8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D05585A1EFFAA1300B3E8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D05585C1EFFAA1300B3E8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0558641EFFB04400B3E8A8 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		8D0558661EFFC8E600B3E8A8 /* Labyrinth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Labyrinth.swift; sourceTree = "<group>"; };
+		8D0558691EFFC94C00B3E8A8 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		8D0558701EFFCC6500B3E8A8 /* DrawManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawManager.swift; sourceTree = "<group>"; };
+		8D0558741EFFD18B00B3E8A8 /* Wall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		8D05588A1F02DA1800B3E8A8 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		8D05588D1F02DA4B00B3E8A8 /* Door.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Door.swift; sourceTree = "<group>"; };
+		8D05588F1F02DC6B00B3E8A8 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +76,129 @@
 		8D0558491EFFAA1300B3E8A8 /* SomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				8D0558621EFFB01D00B3E8A8 /* Classes */,
 				8D05584A1EFFAA1300B3E8A8 /* AppDelegate.swift */,
-				8D05584C1EFFAA1300B3E8A8 /* GameScene.sks */,
 				8D05584E1EFFAA1300B3E8A8 /* Actions.sks */,
-				8D0558501EFFAA1300B3E8A8 /* GameScene.swift */,
-				8D0558521EFFAA1300B3E8A8 /* GameViewController.swift */,
 				8D0558541EFFAA1300B3E8A8 /* Main.storyboard */,
 				8D0558571EFFAA1300B3E8A8 /* Assets.xcassets */,
 				8D0558591EFFAA1300B3E8A8 /* LaunchScreen.storyboard */,
 				8D05585C1EFFAA1300B3E8A8 /* Info.plist */,
 			);
 			path = SomeProject;
+			sourceTree = "<group>";
+		};
+		8D0558621EFFB01D00B3E8A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8D05586B1EFFC99100B3E8A8 /* Managers */,
+				8D0558681EFFC93300B3E8A8 /* Helpers */,
+				8D0558631EFFB03400B3E8A8 /* Models */,
+				8D05586C1EFFC9D700B3E8A8 /* Scenes */,
+				8D05586F1EFFCA1100B3E8A8 /* ViewControllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8D0558631EFFB03400B3E8A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D0558881F02D9F200B3E8A8 /* Labyrinth */,
+				8D0558731EFFD17D00B3E8A8 /* Wall */,
+				8D0558721EFFD17100B3E8A8 /* Base  */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8D0558681EFFC93300B3E8A8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8D0558691EFFC94C00B3E8A8 /* Random.swift */,
+				8D05588F1F02DC6B00B3E8A8 /* Device.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		8D05586B1EFFC99100B3E8A8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8D0558701EFFCC6500B3E8A8 /* DrawManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		8D05586C1EFFC9D700B3E8A8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8D05586E1EFFC9F700B3E8A8 /* UIScenes */,
+				8D05586D1EFFC9EB00B3E8A8 /* Classes */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		8D05586D1EFFC9EB00B3E8A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8D0558501EFFAA1300B3E8A8 /* GameScene.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8D05586E1EFFC9F700B3E8A8 /* UIScenes */ = {
+			isa = PBXGroup;
+			children = (
+				8D05584C1EFFAA1300B3E8A8 /* GameScene.sks */,
+			);
+			name = UIScenes;
+			sourceTree = "<group>";
+		};
+		8D05586F1EFFCA1100B3E8A8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D0558521EFFAA1300B3E8A8 /* GameViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D0558721EFFD17100B3E8A8 /* Base  */ = {
+			isa = PBXGroup;
+			children = (
+				8D0558641EFFB04400B3E8A8 /* Element.swift */,
+			);
+			name = "Base ";
+			sourceTree = "<group>";
+		};
+		8D0558731EFFD17D00B3E8A8 /* Wall */ = {
+			isa = PBXGroup;
+			children = (
+				8D0558741EFFD18B00B3E8A8 /* Wall.swift */,
+			);
+			name = Wall;
+			sourceTree = "<group>";
+		};
+		8D0558881F02D9F200B3E8A8 /* Labyrinth */ = {
+			isa = PBXGroup;
+			children = (
+				8D0558891F02DA0A00B3E8A8 /* Section */,
+				8D0558661EFFC8E600B3E8A8 /* Labyrinth.swift */,
+			);
+			name = Labyrinth;
+			sourceTree = "<group>";
+		};
+		8D0558891F02DA0A00B3E8A8 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				8D05588C1F02DA3C00B3E8A8 /* Door */,
+				8D05588A1F02DA1800B3E8A8 /* Section.swift */,
+			);
+			name = Section;
+			sourceTree = "<group>";
+		};
+		8D05588C1F02DA3C00B3E8A8 /* Door */ = {
+			isa = PBXGroup;
+			children = (
+				8D05588D1F02DA4B00B3E8A8 /* Door.swift */,
+			);
+			name = Door;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0558901F02DC6B00B3E8A8 /* Device.swift in Sources */,
+				8D05588B1F02DA1800B3E8A8 /* Section.swift in Sources */,
 				8D0558511EFFAA1300B3E8A8 /* GameScene.swift in Sources */,
+				8D0558671EFFC8E600B3E8A8 /* Labyrinth.swift in Sources */,
+				8D05588E1F02DA4B00B3E8A8 /* Door.swift in Sources */,
+				8D0558711EFFCC6500B3E8A8 /* DrawManager.swift in Sources */,
+				8D05586A1EFFC94C00B3E8A8 /* Random.swift in Sources */,
 				8D0558531EFFAA1300B3E8A8 /* GameViewController.swift in Sources */,
+				8D0558751EFFD18B00B3E8A8 /* Wall.swift in Sources */,
+				8D0558651EFFB04400B3E8A8 /* Element.swift in Sources */,
 				8D05584B1EFFAA1300B3E8A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +454,7 @@
 				8D0558611EFFAA1300B3E8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
